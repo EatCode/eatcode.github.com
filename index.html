@@ -1,0 +1,37 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8"/>
+    <title>Tabs & History Sample</title>
+    <style>
+      * { margin:0; padding:0; border:0; outline:0; }
+      body { font:25pt Tahoma; background:#FFF; color:#000; }
+      .tabArea { margin:40px; }
+      .tabArea ul { background:#222; padding:5px; float:left; }
+      .tabArea li { list-style:none; /*Try deleting this float*/ float:left; }
+      .tabArea a { display:block; background:#222; color:snow; padding:0 13px; font:bold 25pt Arial; text-decoration:none; }
+      .tabArea a.selected { background:#FFF; color:#000; }
+      .items>div { display:none; float:left; margin:0.1em 0 0 0.5em; }
+      .tabArea ul, .tabArea a { border-radius:4px; -moz-border-radius:4px; }
+    </style>
+  </head>
+  <body>
+    <div class="tabArea">
+      <ul>
+        <li><a href="#one">1</a></li>
+        <li><a href="#two">2</a></li>
+        <li><a href="#three">3</a></li>
+        <li><a href="#four">4</a></li>
+      </ul>
+      <div class="items">
+        <div id="one">Welcome to <b>1</b>!</div>
+        <div id="two">You can do anything with <b>2</b>.</div>
+        <div id="three">Anything at all <b>3</b>.</div>
+        <div id="four">The only limit is <b>4</b></div>
+      </div>
+    </div>
+    <script src="jquery.js"></script>
+    <script src="jquery.history.js"></script>    
+    <script src="tabs.js"></script>
+  </body>
+</html>
